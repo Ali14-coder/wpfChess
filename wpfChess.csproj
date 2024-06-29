@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Black-bishop.png" />
+    <None Remove="Images\Black-king.png" />
+    <None Remove="Images\Black-knight.png" />
+    <None Remove="Images\Black-pawn.png" />
+    <None Remove="Images\Black-queen.png" />
+    <None Remove="Images\Black-rookjpg.png" />
+    <None Remove="Images\White-bishop.png" />
+    <None Remove="Images\White-king.png" />
+    <None Remove="Images\White-knight.png" />
+    <None Remove="Images\White-pawn.png" />
+    <None Remove="Images\White-queen.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\White-bishop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Black-bishop.png" />
+    <Resource Include="Images\Black-king.png" />
+    <Resource Include="Images\Black-knight.png" />
+    <Resource Include="Images\Black-pawn.png" />
+    <Resource Include="Images\Black-queen.png" />
+    <Resource Include="Images\Black-rookjpg.png" />
+    <Resource Include="Images\White-king.png" />
+    <Resource Include="Images\White-knight.png" />
+    <Resource Include="Images\White-pawn.png" />
+    <Resource Include="Images\White-queen.png" />
+  </ItemGroup>
+
+</Project>
