@@ -1,7 +1,7 @@
 # Chess Game:
 Coded by Aliziwe Qeqe
 
-# Start-up
+## Start-up
 1. I started by  copy and pasting all the images of the chess pieces that I would need from google.
 2. I then used an AI backgrond remover to remove the background of each image so that only the piece would be visible and seen on the chess board.
 3. I created a folder labled 'Images' inside my project that held all the image pieces.
