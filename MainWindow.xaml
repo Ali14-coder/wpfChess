@@ -5,128 +5,129 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfChess"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800">
-    <Grid ShowGridLines="True">
+        Title="MainWindow" Height="700" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid x:Name="Chessboard" ShowGridLines="True">
         <!--Making 8 columns-->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="87.5*"></ColumnDefinition>
+            <ColumnDefinition Width="87.5*"></ColumnDefinition>
+            <ColumnDefinition Width="87.5*"></ColumnDefinition>
+            <ColumnDefinition Width="87.5*"></ColumnDefinition>
+            <ColumnDefinition Width="87.5*"></ColumnDefinition>
+            <ColumnDefinition Width="87.5*"></ColumnDefinition>
+            <ColumnDefinition Width="87.5*"></ColumnDefinition>
+            <ColumnDefinition Width="87.5*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <!--Making 8 rows-->
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="87.5*"></RowDefinition>
+            <RowDefinition Height="87.5*"></RowDefinition>
+            <RowDefinition Height="87.5*"></RowDefinition>
+            <RowDefinition Height="87.5*"></RowDefinition>
+            <RowDefinition Height="87.5*"></RowDefinition>
+            <RowDefinition Height="87.5*"></RowDefinition>
+            <RowDefinition Height="87.5*"></RowDefinition>
+            <RowDefinition Height="87.5*"></RowDefinition>
         </Grid.RowDefinitions>
         <!--(Anoop Kumar Sharma, 2023)-->
         <!--Setting checkerboard colours on grid-->
-         <!--Row h-->
-            <!--White-->
-                <Border Grid.Row ="0" Grid.Column="0" Background="White"/>
-                <Border Grid.Row ="0" Grid.Column="2" Background="White"/>
-                <Border Grid.Row ="0" Grid.Column="4" Background="White"/>
-                <Border Grid.Row ="0" Grid.Column="6" Background="White"/>
-            <!--Black-->
-                <Border Grid.Row ="0" Grid.Column="1" Background="Black"/>
-                <Border Grid.Row ="0" Grid.Column="3" Background="Black"/>
-                <Border Grid.Row ="0" Grid.Column="5" Background="Black"/>
-                <Border Grid.Row ="0" Grid.Column="7" Background="Black"/>
-        <!--Row g-->
-            <!--White-->
-                <Border Grid.Row ="1" Grid.Column="1" Background="White"/>
-                <Border Grid.Row ="1" Grid.Column="3" Background="White"/>
-                <Border Grid.Row ="1" Grid.Column="5" Background="White"/>
-                <Border Grid.Row ="1" Grid.Column="7" Background="White"/>
-            <!--Black-->
-                <Border Grid.Row ="1" Grid.Column="0" Background="Black"/>
-                <Border Grid.Row ="1" Grid.Column="2" Background="Black"/>
-                <Border Grid.Row ="1" Grid.Column="4" Background="Black"/>
-                <Border Grid.Row ="1" Grid.Column="6" Background="Black"/>
-        <!--Row f-->
-            <!--White-->
-                <Border Grid.Row ="2" Grid.Column="0" Background="White"/>
-                <Border Grid.Row ="2" Grid.Column="2" Background="White"/>
-                <Border Grid.Row ="2" Grid.Column="4" Background="White"/>
-                <Border Grid.Row ="2" Grid.Column="6" Background="White"/>
-            <!--Black-->
-                <Border Grid.Row ="2" Grid.Column="1" Background="Black"/>
-                <Border Grid.Row ="2" Grid.Column="3" Background="Black"/>
-                <Border Grid.Row ="2" Grid.Column="5" Background="Black"/>
-                <Border Grid.Row ="2" Grid.Column="7" Background="Black"/>
-        <!--Row e-->
-            <!--White-->
-                <Border Grid.Row ="3" Grid.Column="1" Background="White"/>
-                <Border Grid.Row ="3" Grid.Column="3" Background="White"/>
-                <Border Grid.Row ="3" Grid.Column="5" Background="White"/>
-                <Border Grid.Row ="3" Grid.Column="7" Background="White"/>
-            <!--Black-->
-                <Border Grid.Row ="3" Grid.Column="0" Background="Black"/>
-                <Border Grid.Row ="3" Grid.Column="2" Background="Black"/>
-                <Border Grid.Row ="3" Grid.Column="4" Background="Black"/>
-                <Border Grid.Row ="3" Grid.Column="6" Background="Black"/>
-        <!--Row d-->
-            <!--White-->
-                <Border Grid.Row ="4" Grid.Column="0" Background="White"/>
-                <Border Grid.Row ="4" Grid.Column="2" Background="White"/>
-                <Border Grid.Row ="4" Grid.Column="4" Background="White"/>
-                <Border Grid.Row ="4" Grid.Column="6" Background="White"/>
-            <!--Black-->
-                <Border Grid.Row ="4" Grid.Column="1" Background="Black"/>
-                <Border Grid.Row ="4" Grid.Column="3" Background="Black"/>
-                <Border Grid.Row ="4" Grid.Column="5" Background="Black"/>
-                <Border Grid.Row ="4" Grid.Column="7" Background="Black"/>
-        <!--Row c-->
-            <!--White-->
-                <Border Grid.Row ="5" Grid.Column="1" Background="White"/>
-                <Border Grid.Row ="5" Grid.Column="3" Background="White"/>
-                <Border Grid.Row ="5" Grid.Column="5" Background="White"/>
-                <Border Grid.Row ="5" Grid.Column="7" Background="White"/>
-            <!--Black-->
-                <Border Grid.Row ="5" Grid.Column="0" Background="Black"/>
-                <Border Grid.Row ="5" Grid.Column="2" Background="Black"/>
-                <Border Grid.Row ="5" Grid.Column="4" Background="Black"/>
-                <Border Grid.Row ="5" Grid.Column="6" Background="Black"/>
-        <!--Row b-->
-            <!--White-->
-                <Border Grid.Row ="6" Grid.Column="0" Background="White"/>
-                <Border Grid.Row ="6" Grid.Column="2" Background="White"/>
-                <Border Grid.Row ="6" Grid.Column="4" Background="White"/>
-                <Border Grid.Row ="6" Grid.Column="6" Background="White"/>
-            <!--Black-->
-                <Border Grid.Row ="6" Grid.Column="1" Background="Black"/>
-                <Border Grid.Row ="6" Grid.Column="3" Background="Black"/>
-                <Border Grid.Row ="6" Grid.Column="5" Background="Black"/>
-                <Border Grid.Row ="6" Grid.Column="7" Background="Black"/>
-        <!--Row a-->
-            <!--White-->
-                <Border Grid.Row ="7" Grid.Column="1" Background="White"/>
-                <Border Grid.Row ="57" Grid.Column="3" Background="White"/>
-                <Border Grid.Row ="7" Grid.Column="5" Background="White"/>
-                <Border Grid.Row ="7" Grid.Column="7" Background="White"/>
+        <!--Row h-->
+        <!--White-->
+        <Border Grid.Row ="0" Grid.Column="0" Background="White"/>
+        <Border Grid.Row ="0" Grid.Column="2" Background="White"/>
+        <Border Grid.Row ="0" Grid.Column="4" Background="White"/>
+        <Border Grid.Row ="0" Grid.Column="6" Background="White"/>
         <!--Black-->
-                <Border Grid.Row ="7" Grid.Column="0" Background="Black"/>
-                <Border Grid.Row ="7" Grid.Column="2" Background="Black"/>
-                <Border Grid.Row ="7" Grid.Column="4" Background="Black"/>
-                <Border Grid.Row ="7" Grid.Column="6" Background="Black"/>
+        <Border Grid.Row ="0" Grid.Column="1" Background="Black"/>
+        <Border Grid.Row ="0" Grid.Column="3" Background="Black"/>
+        <Border Grid.Row ="0" Grid.Column="5" Background="Black"/>
+        <Border Grid.Row ="0" Grid.Column="7" Background="Black"/>
+        <!--Row g-->
+        <!--White-->
+        <Border Grid.Row ="1" Grid.Column="1" Background="White" />
+        <Border Grid.Row ="1" Grid.Column="3" Background="White" />
+        <Border Grid.Row ="1" Grid.Column="5" Background="White" />
+        <Border Grid.Row ="1" Grid.Column="7" Background="White" />
+        <!--Black-->
+        <Border Grid.Row ="1" Grid.Column="0" Background="Black" />
+        <Border Grid.Row ="1" Grid.Column="2" Background="Black" />
+        <Border Grid.Row ="1" Grid.Column="4" Background="Black" />
+        <Border Grid.Row ="1" Grid.Column="6" Background="Black" />
+        <!--Row f-->
+        <!--White-->
+        <Border Grid.Row ="2" Grid.Column="0" Background="White" />
+        <Border Grid.Row ="2" Grid.Column="2" Background="White" />
+        <Border Grid.Row ="2" Grid.Column="4" Background="White" />
+        <Border Grid.Row ="2" Grid.Column="6" Background="White" />
+        <!--Black-->
+        <Border Grid.Row ="2" Grid.Column="1" Background="Black" />
+        <Border Grid.Row ="2" Grid.Column="3" Background="Black" />
+        <Border Grid.Row ="2" Grid.Column="5" Background="Black" />
+        <Border Grid.Row ="2" Grid.Column="7" Background="Black" />
+        <!--Row e-->
+        <!--White-->
+        <Border Grid.Row ="3" Grid.Column="1" Background="White" />
+        <Border Grid.Row ="3" Grid.Column="3" Background="White" />
+        <Border Grid.Row ="3" Grid.Column="5" Background="White" />
+        <Border Grid.Row ="3" Grid.Column="7" Background="White" />
+        <!--Black-->
+        <Border Grid.Row ="3" Grid.Column="0" Background="Black" />
+        <Border Grid.Row ="3" Grid.Column="2" Background="Black" />
+        <Border Grid.Row ="3" Grid.Column="4" Background="Black" />
+        <Border Grid.Row ="3" Grid.Column="6" Background="Black" />
+        <!--Row d-->
+        <!--White-->
+        <Border Grid.Row ="4" Grid.Column="0" Background="White" />
+        <Border Grid.Row ="4" Grid.Column="2" Background="White" />
+        <Border Grid.Row ="4" Grid.Column="4" Background="White" />
+        <Border Grid.Row ="4" Grid.Column="6" Background="White" />
+        <!--Black-->
+        <Border Grid.Row ="4" Grid.Column="1" Background="Black" />
+        <Border Grid.Row ="4" Grid.Column="3" Background="Black" />
+        <Border Grid.Row ="4" Grid.Column="5" Background="Black" />
+        <Border Grid.Row ="4" Grid.Column="7" Background="Black" />
+        <!--Row c-->
+        <!--White-->
+        <Border Grid.Row ="5" Grid.Column="1" Background="White" />
+        <Border Grid.Row ="5" Grid.Column="3" Background="White" />
+        <Border Grid.Row ="5" Grid.Column="5" Background="White" />
+        <Border Grid.Row ="5" Grid.Column="7" Background="White" />
+        <!--Black-->
+        <Border Grid.Row ="5" Grid.Column="0" Background="Black" />
+        <Border Grid.Row ="5" Grid.Column="2" Background="Black" />
+        <Border Grid.Row ="5" Grid.Column="4" Background="Black" />
+        <Border Grid.Row ="5" Grid.Column="6" Background="Black" />
+        <!--Row b-->
+        <!--White-->
+        <Border Grid.Row ="6" Grid.Column="0" Background="White" />
+        <Border Grid.Row ="6" Grid.Column="2" Background="White" />
+        <Border Grid.Row ="6" Grid.Column="4" Background="White" />
+        <Border Grid.Row ="6" Grid.Column="6" Background="White" />
+        <!--Black-->
+        <Border Grid.Row ="6" Grid.Column="1" Background="Black" />
+        <Border Grid.Row ="6" Grid.Column="3" Background="Black" />
+        <Border Grid.Row ="6" Grid.Column="5" Background="Black" />
+        <Border Grid.Row ="6" Grid.Column="7" Background="Black" />
+        <!--Row a-->
+        <!--White-->
+        <Border Grid.Row ="7" Grid.Column="1" Background="White" />
+        <Border Grid.Row ="7" Grid.Column="3" Background="White" />
+        <Border Grid.Row ="7" Grid.Column="5" Background="White" />
+        <Border Grid.Row ="7" Grid.Column="7" Background="White" />
+        <!--Black-->
+        <Border Grid.Row ="7" Grid.Column="0" Background="Black" />
+        <Border Grid.Row ="7" Grid.Column="2" Background="Black" />
+        <Border Grid.Row ="7" Grid.Column="4" Background="Black" />
+        <Border Grid.Row ="7" Grid.Column="6" Background="Black" />
 
 
-        <Image x:Name="BlackRook2" Margin="10,8,10,0" Source="/Images/Black-rookjpg.png" Stretch="Fill" Grid.Row ="0" Grid.Column="7"/>
+        <Image x:Name="BlackRook2" Margin="10,3,10,5" Source="/Images/Black-rookjpg.png" Stretch="Fill" Grid.Row ="0" Grid.Column="7"/>
         <Image x:Name="BlackRook1" Margin="10,4,10,4" Source="/Images/Black-rookjpg.png" Stretch="Fill" Grid.Row ="0" Grid.Column="0"/>
         <Image x:Name="BlackKinght1" Grid.Column="1" Margin="5,10,5,10" Source="/Images/Black-knight.png" Stretch="Fill" Grid.Row="0"/>
         <Image x:Name="BlackKnight2" Grid.Column="6" Margin="5,10,5,10" Source="/Images/Black-knight.png" Stretch="Fill" Grid.Row="0"/>
-        <Image x:Name="BlackBishop1" Grid.Column="2" Margin="10,8,0,10" Source="/Images/Black-bishop.png" Stretch="Fill" Grid.Row="0"/>
-        <Image x:Name="BlackBishop2" Grid.Column="5" Margin="10,8,0,10" Source="/Images/Black-bishop.png" Stretch="Fill" Grid.Row="0"/>
+        <Image x:Name="BlackBishop1" Grid.Column="2" Margin="5,8,4,10" Source="/Images/Black-bishop.png" Stretch="Fill" Grid.Row="0"/>
+        <Image x:Name="BlackBishop2" Grid.Column="5" Margin="4,9,5,9" Source="/Images/Black-bishop.png" Stretch="Fill" Grid.Row="0"/>
         <Image x:Name="BlackKing" Grid.Column="3" Margin="10,10,10,10" Source="/Images/Black-king.png" Stretch="Fill"/>
         <Image x:Name="BlackQueen" Grid.Column="4" Margin="6,6,6,4" Source="/Images/Black-queen.png" Stretch="Fill"/>
         <Image x:Name="BlackPawn1" Margin="10,10,10,10" Source="/Images/Black-pawn.png" Stretch="Fill" Grid.Row="1" Grid.Column="0"/>
@@ -138,15 +139,16 @@
         <Image x:Name="BlackPawn7" Margin="10,10,10,10" Source="/Images/Black-pawn.png" Stretch="Fill" Grid.Row="1" Grid.Column="6"/>
         <Image x:Name="BlackPawn8" Margin="10,10,10,10" Source="/Images/Black-pawn.png" Stretch="Fill" Grid.Row="1" Grid.Column="7"/>
         <!--White pieces-->
-        <Image x:Name="WhiteRook1" Margin="10,5,10,10" Grid.Row="7" Grid.Column ="0" Source="/Images/White-rook.png" Stretch="Fill"/>
-        <Image x:Name="WhiteRook2" Margin="10,5,10,10" Grid.Row="7" Grid.Column ="7" Source="/Images/White-rook.png" Stretch="Fill"/>
-        <Image x:Name="WhiteKnight1" Margin="10,5,10,10" Grid.Row="7" Source="/Images/White-knight.png" Stretch="Fill" Grid.Column="1"/>
-        <Image x:Name="WhiteKnight2" Margin="10,5,10,10" Grid.Row="7" Source="/Images/White-knight.png" Stretch="Fill" Grid.Column="6"/>
-        <Image x:Name="WhiteBishop1" Grid.Column="2" Margin="10,8,10,12" Grid.Row="7" Source="/Images/White-bishop.png" Stretch="Fill"/>
-        <Image x:Name="WhiteBishop2" Grid.Column="5" Margin="10,8,10,12" Grid.Row="7" Source="/Images/White-bishop.png" Stretch="Fill"/>
-        <Image x:Name="WhiteKing" Grid.Column="4" Margin="6,7,10,10" Grid.Row="7" Source="/Images/White-king.png" Stretch="Fill"/>
-        <Image x:Name="WhiteQueen" Grid.Column="3" Margin="10,10,10,10" Grid.Row="7" Source="/Images/White-queen.png" Stretch="Fill"/>
-        <Image x:Name="WhitePawn1" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="0"/>
+        <Image x:Name="WhiteRook1" Margin="4,8,10,10" Grid.Row="8" Grid.Column ="0" Source="/Images/White-rook.png" Stretch="Fill"/>
+        <Image x:Name="WhiteRook2" Margin="4,8,10,10" Grid.Row="8" Grid.Column ="7" Source="/Images/White-rook.png" Stretch="Fill"/>
+        <Image x:Name="WhiteKnight1" Margin="10,5,10,10" Grid.Row="8" Source="/Images/White-knight.png" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="WhiteKnight2" Margin="10,5,10,10" Grid.Row="8" Source="/Images/White-knight.png" Stretch="Fill" Grid.Column="6"/>
+        <Image x:Name="WhiteBishop1" Grid.Column="2" Margin="10,8,10,12" Grid.Row="8" Source="/Images/White-bishop.png" Stretch="Fill"/>
+        <Image x:Name="WhiteBishop2" Grid.Column="5" Margin="10,8,10,12" Grid.Row="8" Source="/Images/White-bishop.png" Stretch="Fill"/>
+        <Image x:Name="WhiteKing" Grid.Column="4" Margin="6,7,10,10" Grid.Row="8" Source="/Images/White-king.png" Stretch="Fill"/>
+        <Image x:Name="WhiteQueen" Grid.Column="3" Margin="10,10,10,10" Grid.Row="8" Source="/Images/White-queen.png" Stretch="Fill"/>
+        <Image x:Name="WhitePawn1" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="0" />
+        
         <Image x:Name="WhitePawn2" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="1"/>
         <Image x:Name="WhitePawn3" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="2"/>
         <Image x:Name="WhitePawn4" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="3"/>
