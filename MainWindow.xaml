@@ -147,7 +147,7 @@
         <Image x:Name="WhiteBishop2" Grid.Column="5" Margin="10,8,10,12" Grid.Row="8" Source="/Images/White-bishop.png" Stretch="Fill"/>
         <Image x:Name="WhiteKing" Grid.Column="4" Margin="6,7,10,10" Grid.Row="8" Source="/Images/White-king.png" Stretch="Fill"/>
         <Image x:Name="WhiteQueen" Grid.Column="3" Margin="10,10,10,10" Grid.Row="8" Source="/Images/White-queen.png" Stretch="Fill"/>
-        <Image x:Name="WhitePawn1" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="0" />
+        <Image x:Name="WhitePawn1" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="0" MouseUp="WhitePawn1_MouseUp" MouseDown="WhitePawn1_MouseDown" />
         
         <Image x:Name="WhitePawn2" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="1"/>
         <Image x:Name="WhitePawn3" Margin="9,5,10,10" Grid.Row="6" Source="/Images/White-pawn.png" Stretch="Fill" Grid.Column="2"/>
